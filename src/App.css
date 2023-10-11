@@ -1,0 +1,170 @@
+body {
+  height: 100vh;
+  font-family: montserrat;
+  font-weight: 500;
+  color: white;
+  background: #000000f0;
+  background-image: url(/src/assets/day.png);
+  background-size: contain;
+  /* background-repeat: no-repeat; */
+}
+.imgStatus img {
+  width: 120px;
+}
+.otherData p {
+  margin: 4px;
+}
+
+.temp p {
+  font-size: 73px;
+  font-weight: 800;
+  margin: 10px;
+  margin-left: 43px;
+}
+
+.description p {
+  font-size: 22px;
+  margin: 0px;
+}
+
+img.locationImg {
+  width: 23px;
+  height: fit-content;
+  display: none;
+}
+
+.otherData div p:first-child {
+  font-weight: 600;
+  font-size: 19px;
+}
+
+.searchContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+.top input {
+  width: 400px;
+  /* margin-left: 5%; */
+  padding: 0px;
+  height: 53px;
+  /* margin-top: 2%; */
+  border-radius: 60px;
+  background: rgb(255 255 255 / 7%);
+  border: none;
+  color: white;
+  padding-left: 50px;
+  padding-right: 25px;
+  backdrop-filter: blur(10px);
+}
+
+.top input::placeholder {
+  color: white;
+}
+
+.top input:focus-visible {
+  border: none;
+  outline: none;
+}
+
+.buscaUnaCiudad {
+  width: 90%;
+  margin: auto;
+}
+.otherData {
+  background: #2d2d2d;
+  width: 400px;
+  margin: auto;
+  border-radius: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  backdrop-filter: blur(10px);
+  background-color: rgb(255 255 255 / 7%);
+  position: relative;
+  height: 150px;
+  padding: 20px 0px;
+  margin-top: 20px;
+}
+
+.otherData div {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.separator {
+  position: absolute;
+  height: 100px;
+  color: white;
+  left: 60px;
+}
+
+.mainInformation {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 10px;
+}
+
+.location {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.searchForACity {
+  margin: auto;
+  text-align: center;
+  margin-top: 30px;
+  font-weight: 500;
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+img.buscar {
+  width: 20px;
+}
+
+img.buscar {
+  width: 20px;
+}
+
+.top img {
+  position: relative;
+  z-index: 3;
+}
+
+#buscarImg {
+  left: 40px;
+  right: unset;
+}
+
+img.closeImg {
+  width: 8px;
+  right: 40px;
+  left: unset;
+}
+
+.locationNotFounded{
+  color: rgb(187, 62, 62);
+  text-align: center;
+  width: 100%;
+  margin: 0px;
+  font-size: 10px;
+  position: absolute;
+  margin-top: -10px;
+}
+
+@media screen and (max-width: 768px) {
+  .top input {
+    width: 70%;
+  }
+
+  .otherData {
+    width: 90%;
+    height: fit-content;
+  }
+}
